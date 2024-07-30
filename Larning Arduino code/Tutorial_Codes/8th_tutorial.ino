@@ -9,7 +9,7 @@
 */
 void setup() {
   // put your setup code here, to run once:
-  pinMod(12, INPUT_PULLUP); //INPUT_PULLUP: Makes the Digital PIn HIgh initially, until it receivers a LOW Signal from an external device.
+  pinMode(12, INPUT_PULLUP); //INPUT_PULLUP: Makes the Digital PIn HIgh initially, until it receivers a LOW Signal from an external device.
   pinMode(13, OUTPUT);
   Serial.begin(9600);
 }
@@ -17,7 +17,6 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int val = digitalRead(12);
-  delay(500);
  // Serial.print(val); pint new line is next line comment
   Serial.println(val); //ln for new line
   digitalWrite(13, val); // high= 1= true, low = 0= false
