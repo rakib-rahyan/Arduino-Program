@@ -15,13 +15,35 @@
   pin: Arduino pin
   value: the duty cycle: between 0(always off) and 255(always on).
   Ex: analogWrite(6,200);
-*/
+
+// for analogRead
 void setup() {
   // put your setup code here, to run once:
-
+  Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  int val = analogRead(A0);
+  Serial.println(val);
+  delay(1000);
+}
+*/
+void setup(){
 
+}
+
+void loop(){
+  analogWrite(6,255);
+  delay(4000);
+  analogWrite(6,200);
+  delay(4000);
+  analogWrite(6,150);
+  delay(4000);
+  analogWrite(6,100);
+  delay(4000);
+  analogWrite(6,50);
+  delay(4000);
+  analogWrite(6,0);
+  delay(2000);
 }
