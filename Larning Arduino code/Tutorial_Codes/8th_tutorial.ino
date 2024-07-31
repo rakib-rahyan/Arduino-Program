@@ -9,7 +9,7 @@
 */
 void setup() {
   // put your setup code here, to run once:
-  pinMode(12, INPUT_PULLUP); //INPUT_PULLUP: Makes the Digital PIn HIgh initially, until it receivers a LOW Signal from an external device.
+  pinMode(12, INPUT_PULLUP); //INPUT_PULLUP: Makes the Digital Pin HIgh initially, until it receivers a LOW Signal from an external device.
   pinMode(13, OUTPUT);
   Serial.begin(9600);
 }
